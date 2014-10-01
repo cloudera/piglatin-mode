@@ -31,11 +31,11 @@
 (defconst piglatin-font-lock-keywords
   (list
    '("\\(#\\|\-\-\\).*$" . font-lock-comment-face)
-  '("\\<\\(LOAD\\|FILTER\\|FOREACH\\|GENERATE\\|AND\\|OR\\|ANY\\|ALL\\|ARRANGE\\|AS\\|ASC\\|BY\\|cache\\|cat\\|cd\|COGROUP\\|copyFromLocal\\|copyToLocal\\|cp\\|cross\\|define\\|desc\\|describe\\|diff\\|distinct\\|du\\|dump\\|eval\\|exec\\|explain\\|flatten\\|generate\\|group\\|help\\|if\\|illustrate\\|inner\\|input\\|into\\|is\\|join\\|kill\\|limit\\|ls\\|mkdir\\|mv\\|not\\|null\\|or\\|order\\|outer\\|output\\|parallel\\|pig\\|pwd\\|quit\\|register\\|rm\\|rmf\\|run\\|sample\\|set\\|ship\\|size\\|split\\|stderr\\|stdin\\|stdout\\|store\\|stream\\|through\\|union\\|using\\)\\>" . font-lock-keyword-face)
+  '("\\<\\(and\\|all\\|as\\|asc\\|by\\|cache\\|cat\\|cd\\|cogroup\\|copyFromLocal\\|copyToLocal\\|cp\\|cross\\|cube\\|distinct\\|define\\|dense\\|desc\\|describe\\|du\\|dump\\|exec\\|explain\\|filter\\|flatten\\|foreach\\|generate\\|group\\|help\\|if\\|illustrate\\|inner\\|input\\|into\\|is\\|join\\|kill\\|limit\\|load\\|ls\\|matches\\|mkdir\\|mv\\|not\\|null\\|or\\|order\\|outer\\|output\\|parallel\\|pig\\|pwd\\|rank\\|register\\|returns\\|rm\\|rmf\\|rollup\\|run\\|set\\|ship\\|split\\|stderr\\|stdin\\|stdout\\|store\\|stream\\|through\\|union\\|using\\|void\\)\\>" . font-lock-keyword-face)
    '("\\<\\(\\w+\\)\\s-*(" (1 font-lock-function-name-face))  ;; functions
    '("\\<\\(\\w+\\)\\>\\s-*=" (1 font-lock-variable-name-face))
    '("'.+'" . font-lock-string-face)
-   '("\\<\\(bytearray\\|chararray\\|double\\|int\\|float\\|long\\|tuple\\|bag\\|map\\)\\>" . font-lock-type-face)
+   '("\\<\\(bytearray\\|chararray\\|double\\|int\\|float\\|long\\|tuple\\|bag\\|biginteger\\|bigdecimal\\|map\\)\\>" . font-lock-type-face)
    )
   "PigLatin Keywords")
 
