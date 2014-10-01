@@ -6,3 +6,5 @@ It will automatically highlight any file with a .pig extension.
 
 To enable, just add something like the following to your .emacs file:
 (load-file "/path/to/piglatin.el")
+
+This mode will run on Emacs 23.1.
